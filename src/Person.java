@@ -1,3 +1,5 @@
+import java.util.Date;
+
 /**
  * @author admin
  * @version 1.0.0
@@ -9,8 +11,10 @@ public class Person {
 
     private String name;
     private int age;
+    private Date birhday;
 
-    public Person(String name, String age) {
+    public Person(Date birhday, String name, String age) {
+        this.birhday = birhday;
         this.name = name;
         this.age = Integer.parseInt(age);
     }

@@ -1,4 +1,3 @@
-import javax.xml.namespace.QName;
 import java.util.Date;
 
 public class Main {
@@ -21,7 +20,7 @@ public class Main {
         //exception();
         //field();
         //back();
-        clause();
+        //clause();
 
         System.out.println("Hello World!");
         System.out.println("topson");
@@ -48,14 +47,14 @@ public class Main {
     }
 
     public static void field(){
-        Person p =new Person("duandian","10");
+        Person p =new Person(new Date(), "duandian","10");
         p.setAge("12");
         System.out.println(p);
         System.out.println(p.getAge());
     }
 
     public static void back(){
-        Person p =new Person("后悔药","18");
+        Person p =new Person(new Date(), "后悔药","18");
         if(p.getAge() <=19){
             System.out.println("又年轻了");
         }else{
